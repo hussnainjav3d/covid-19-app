@@ -3,7 +3,7 @@ import Header from "./components/Hedaer";
 import Dropdown from "./components/Dropdown";
 import Chart from "./components/Chart";
 import React, { useEffect, useState } from "react";
-import { fetchGlobalData, fetchCountryData } from "./api";
+import { fetchGlobalData } from "./api";
 
 const App = () => {
   const [globalData, setData] = useState([]);
