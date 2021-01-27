@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Grid, Paper } from "@material-ui/core";
+import { Spinner } from "./Spinner";
 import CountUp from "react-countup";
 import "../main.css";
 
@@ -35,7 +36,7 @@ export default function Cards({
   globalData: { confirmed, recovered, deaths, lastUpdate },
 }) {
   const classes = useStyles();
-  if (!confirmed) return "Loading...";
+  if (!confirmed) return <Spinner className="spinner" />;
   return (
     <div className={classes.root}>
       <Grid className="grid-list" container spacing={2} justify="center">
