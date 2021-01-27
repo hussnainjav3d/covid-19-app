@@ -25,3 +25,9 @@
 .MuiGrid-grid-xs-12 {
     flex-basis: 0% !important;
 }
+
+@media screen and (max-width: 540px) {
+    .line_chart {
+        width: 95%;
+    }
+}
