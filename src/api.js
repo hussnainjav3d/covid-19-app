@@ -33,22 +33,22 @@ export const fetchCountryList = async () => {
   }
 };
 
-export const fetchCountryData = async (country) => {
-  try {
-    const {
-      data: { confirmed, recovered, deaths, lastUpdate },
-    } = await axios.get(`${url}/countries/${country}`);
-    const modifiedData = {
-      confirmed: confirmed.value,
-      recovered: recovered.value,
-      deaths: deaths.value,
-      lastUpdate,
-    };
-    return modifiedData;
-  } catch (error) {
-    console.log(error);
-  }
-};
+// export const fetchCountryData = async (country) => {
+//   try {
+//     const {
+//       data: { confirmed, recovered, deaths, lastUpdate },
+//     } = await axios.get(`${url}/countries/${country}`);
+//     const modifiedData = {
+//       confirmed: confirmed.value,
+//       recovered: recovered.value,
+//       deaths: deaths.value,
+//       lastUpdate,
+//     };
+//     return modifiedData;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
 
 export const fetchDailyData = async () => {
   try {
