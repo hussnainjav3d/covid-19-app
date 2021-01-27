@@ -12,7 +12,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
     fetchAPI();
   }, []);
 
-  const lineChart = dailyData.length ? (
+  const lineChart = dailyData ? (
     <Line
       data={{
         labels: dailyData.map(({ reportDate }) => reportDate),

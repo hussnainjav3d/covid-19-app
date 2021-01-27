@@ -53,11 +53,13 @@ const Dropdown = ({ getCountry }) => {
             <em>Select Country</em>
           </MenuItem>
           <MenuItem value="">Global</MenuItem>
-          {country.map((item) => (
-            <MenuItem key={Math.random()} value={item}>
-              {item}
-            </MenuItem>
-          ))}
+          {country
+            ? country.map((item) => (
+                <MenuItem key={Math.random()} value={item}>
+                  {item}
+                </MenuItem>
+              ))
+            : "Loading"}
         </Select>
       </FormControl>
     </div>

@@ -20,7 +20,6 @@ const App = () => {
   //   };
   //   gettingCountryData();
   // }, [country]);
-  console.log(country);
   return (
     <div>
       <Header />
