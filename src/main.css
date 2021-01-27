@@ -1,0 +1,30 @@
+.infected {
+    border-bottom: 10px solid green;
+}
+
+.death {
+    border-bottom: 10px solid red;
+}
+
+.recover {
+    border-bottom: 10px solid blue;
+}
+
+.active {
+    border-bottom: 10px solid yellow;
+}
+
+.line_chart {
+    display: flex;
+    width: 85%;
+    margin: 1rem auto;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.MuiGrid-grid-xs-12 {
+    flex-basis: 0% !important;
+}
